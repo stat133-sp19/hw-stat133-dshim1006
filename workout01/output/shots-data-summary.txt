@@ -19,3 +19,141 @@
  Mean   :22.8  
  3rd Qu.:33.0  
  Max.   :48.0  
+[1] "/Users/donghyunshim/Desktop/hw-stat133/workout01/report"
+Error in install.packages : 'match' requires vector arguments
+
+The downloaded binary packages are in
+	/var/folders/pp/62zr0shn6y99pcbjjpnmggg80000gn/T//Rtmp4me7ON/downloaded_packages
+Error in install.packages : Updating loaded packages
+Warning in install.packages :
+  package ‘grid’ is not available (for R version 3.5.2)
+Warning in install.packages :
+  package ‘grid’ is a base package, and should not be updated
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+NULL
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+NULL
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+NULL
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+NULL
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+NULL
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+NULL
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
