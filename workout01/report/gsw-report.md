@@ -12,53 +12,19 @@ The Golden State Warriors, founded in 1946 in Philadelphia, proudly show their g
 
 **Backgrounds About Each Player**
 
-<img src="hw-stat133/workout01/images/stephencurry1.jpg" width="80%" style="display: block; margin: auto;" /> **Stephen Curry** Stephen Curry, born in March 14, 1988, is the Point Guard player for the Golden State Warriors since 2009. His height and weight are recorded as 6 ft 3 in and 190 lbs correspondingly. He has been called for the Most Valuable Player (MVP) twice and won three NBA championships as a Warrior. With his incredible three-point shot, he is recognized as a star who brought revolution in basketball game. In 2014-15, he has led the team to gain their first Championship after their third won in 1975.Curry is also a son of the former NBA player, Dell Curry and older brother of current NBA player Seth Curry.
+<img src="../images/stephencurry1.jpg" width="80%" style="display: block; margin: auto;" /> **Stephen Curry** Stephen Curry, born in March 14, 1988, is the Point Guard player for the Golden State Warriors since 2009. His height and weight are recorded as 6 ft 3 in and 190 lbs correspondingly. He has been called for the Most Valuable Player (MVP) twice and won three NBA championships as a Warrior. With his incredible three-point shot, he is recognized as a star who brought revolution in basketball game. In 2014-15, he has led the team to gain their first Championship after their third won in 1975.Curry is also a son of the former NBA player, Dell Curry and older brother of current NBA player Seth Curry.
 
-<img src="hw-stat133/workout01/images/draymondgreen.jpg" width="80%" style="display: block; margin: auto;" />
+<img src="../images/draymondgreen.jpg" width="80%" style="display: block; margin: auto;" />
 
 **Draymond Green** Draymond Green, born in March 4, 1990, is the Power Forward player for the Golden State Warriors since 2012. His height and weight are recorded as 6ft 7in and 230 lbs correspondingly. He has won three-time NBA All-Star and NBA Defensive Player of the Year in 2017. His potential as a talented basketball player shines during his high school and college years. As a senior in college, he wins NABC National Player of the Year honor and plus joins the GSW upon the graduation.
 
-<img src="hw-stat133/workout01/images/andreiguodala.jpg" width="80%" style="display: block; margin: auto;" /> **Andre Iguodala** Andre Iguodala, born in January 28, 1984, is the Shooting Guard/Small Forward player for the Golden State Warrior since 2013. His height and weight are recorded as 6ft 6in and 215 lbs correspondingly. Before he joins the Warrior, he plays in the Philadelphia 76ers and in 2015, he gains the title NBA Finals Most Valuable Player.
+<img src="../images/andreiguodala.jpg" width="80%" style="display: block; margin: auto;" /> **Andre Iguodala** Andre Iguodala, born in January 28, 1984, is the Shooting Guard/Small Forward player for the Golden State Warrior since 2013. His height and weight are recorded as 6ft 6in and 215 lbs correspondingly. Before he joins the Warrior, he plays in the Philadelphia 76ers and in 2015, he gains the title NBA Finals Most Valuable Player.
 
-<img src="hw-stat133/workout01/images/kevindurant.jpg" width="80%" style="display: block; margin: auto;" /> **Kevin Durant** Kevin Durant, born in September 29, 1988, is the Small Forward player for the Golden State Warrior since 2016. His height and weight are 6ft 9in and 240 lbs correspondingly. He plays in Oklahoma CIty before signing with GSW. He has been called for two Finals MVP awards and two NBA All-Star Game Most Valuable Player Awards and so many more.
+<img src="../images/kevindurant.jpg" width="80%" style="display: block; margin: auto;" /> **Kevin Durant** Kevin Durant, born in September 29, 1988, is the Small Forward player for the Golden State Warrior since 2016. His height and weight are 6ft 9in and 240 lbs correspondingly. He plays in Oklahoma CIty before signing with GSW. He has been called for two Finals MVP awards and two NBA All-Star Game Most Valuable Player Awards and so many more.
 
-<img src="hw-stat133/workout01/images/klaythompson.jpg" width="80%" style="display: block; margin: auto;" />
+<img src="../images/klaythompson.jpg" width="80%" style="display: block; margin: auto;" />
 
 **Klay Thompson** Klay Thompson, born in February 8, 1990, is the Shooting Guard player for the Golden State Warriors since 2011. His height and weights are recorded as 6ft 7in and 215 lbs correspondingly. Like Stephen Curry, Thompson is also the son of former NBA player Mychal Thompson. He takes a key role in winning championship in 2017-18.
-
-``` r
-library(ggplot2)
-library(jpeg)
-library(grid)
-library(dplyr)
-```
-
-    ## 
-    ## Attaching package: 'dplyr'
-
-    ## The following objects are masked from 'package:stats':
-    ## 
-    ##     filter, lag
-
-    ## The following objects are masked from 'package:base':
-    ## 
-    ##     intersect, setdiff, setequal, union
-
-``` r
-dat <-read.csv("hw-stat133/workout01/data/shots-data.csv", stringsAsFactors = FALSE)
-
-prep1 <- group_by(dat, player) %>% filter(shot_type == "2PT Field Goal")
-two_pt <- summarise(prep1, total = length(shot_made_flag), made = sum(shot_made_flag == "shot_yes"), perc_made = (made / total))
-two_pt <-arrange(two_pt, desc(perc_made))
-
-prep2 <- group_by(dat, player) %>% filter(shot_type == "3PT Field Goal")
-three_pt <- summarise(prep2, total = length(shot_made_flag), made = sum(shot_made_flag == "shot_yes"), perc_made = (made / total))
-three_pt <- arrange(three_pt, desc(perc_made))
-
-prep3 <- group_by(dat, player)
-overall <- summarise(prep3, total = length(shot_made_flag), made = sum(shot_made_flag == "shot_yes"), perc_made = (made / total))
-overall <- arrange(overall, desc(perc_made))
-```
 
 After Kevin Durant joins the Golden State Warrior, the team become most powerful than ever. Even though there are slight differences in shooting points between each individual players, we are going to display those small differences using data tables and graphs.
 
@@ -109,8 +75,7 @@ Above data table displays the overall effective shooting percent by each player 
 
 Based on these three data tables, we can conclude that depending on the positions the player play for, the number successful shooting can differ noticeably. Since Kevin Durant, who takes the position as Small Forward (mainly focuses on shooting), and therefore, makes the most effective shots. Draymond Green, on the other hand, takes the position in Power Forward, who position oneself under the basket and defense against the opponents.
 
-<embed src="hw-stat133/workout01/images/gsw-shot-charts.pdf" width="80%" style="display: block; margin: auto;" type="application/pdf" />
-Above graph displays the locations where the shots made and wether the shot is successfuly made or failed in that locations.
+<img src="../images/gsw-shot-charts.png" width="100%" /> Above graph displays the locations where the shots made and wether the shot is successfuly made or failed in that locations.
 
 **Analysis**
 

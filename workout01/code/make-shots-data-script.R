@@ -1,7 +1,16 @@
-#title: make-shots-data-script.R
-#descricption: contains required variables to be used in the visualization phase
-#inputs: what are the inputs required by the script?
-#outputs: what are the outputs created when runnning the script?
+##########################################################################################################
+## Title        : Shots Data (Part 3)
+## Description  : Create a csv file shots-data.csv that contains data of shots made by five players
+## Input        :
+##                - andre-iguodala.csv
+##                - draymond-green.csv
+##                - kevin-durant.csv
+##                - klay-thompson.csv
+##                - stephen-curry.csv
+## Output       : shots-data.csv and other summaries of data in txt format
+## Date         : 3/10/2019
+## Author       : Jennifer Shim
+##########################################################################################################
 
 
 column_names <- c("team_name", "game_date", "season", "period", "minutes_remaining", "seconds_remaining", "shot_made_flag", "action_type", "shot_type", "shot_distance", "opponent", "x", "y")

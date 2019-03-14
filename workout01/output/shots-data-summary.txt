@@ -157,3 +157,4 @@ null device
           1 
 null device 
           1 
+[1] "/Users/donghyunshim/Desktop/hw-stat133/workout01/report"

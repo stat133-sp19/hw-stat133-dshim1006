@@ -1,7 +1,23 @@
-#title: make-shots-charts-script.R
-#descricption: creation of shot charts
-#inputs: what are the inputs required by the script?
-#outputs: what are the outputs created when runnning the script?
+##########################################################################################################
+## Title        : Shots Data (Part 3)
+## Description  : Create a csv file shots-data.csv that contains data of shots made by five players
+## Input        :
+##                - andre-iguodala.csv
+##                - draymond-green.csv
+##                - kevin-durant.csv
+##                - klay-thompson.csv
+##                - stephen-curry.csv
+##                - shots-data.csv
+## Output       : - andre-iguodala-shot-chart.pdf
+##                - draymond-green-shot-chart.pdf
+##                - kevin-durant-shot-chart.pdf
+##                - klay-thompson-shot-chart.pdf
+##                - stephen-curry-shot-chart.pdf
+##                - gsw-shot-charts.pdf
+##                - gsw-shot-charts.png
+## Date         : 3/10/2019
+## Author       : Jennifer Shim
+##########################################################################################################
 
 
 library(ggplot2)
