@@ -2,7 +2,7 @@
 % Please edit documentation in R/binomial.R
 \name{bin_kurtosis}
 \alias{bin_kurtosis}
-\title{bin distribution}
+\title{bin kurtosis}
 \usage{
 bin_kurtosis(n, p)
 }
@@ -12,11 +12,8 @@ bin_kurtosis(n, p)
 \item{p}{prob}
 }
 \value{
-probability
+kurtosis
 }
 \description{
-calculates the distribution
-}
-\examples{
-bin_distribution(trials = 5, prob = 0.5)
+calculates the kurtosis
 }

@@ -2,7 +2,7 @@
 % Please edit documentation in R/binomial.R
 \name{bin_mode}
 \alias{bin_mode}
-\title{bin distribution}
+\title{bin mode}
 \usage{
 bin_mode(n, p)
 }
@@ -12,11 +12,8 @@ bin_mode(n, p)
 \item{p}{prob}
 }
 \value{
-probability
+mode
 }
 \description{
-calculates the distribution
-}
-\examples{
-bin_distribution(trials = 5, prob = 0.5)
+calculates the mode
 }

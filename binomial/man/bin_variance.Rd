@@ -2,7 +2,7 @@
 % Please edit documentation in R/binomial.R
 \name{bin_variance}
 \alias{bin_variance}
-\title{bin distribution}
+\title{bin variance}
 \usage{
 bin_variance(n, p)
 }
@@ -12,11 +12,8 @@ bin_variance(n, p)
 \item{p}{prob}
 }
 \value{
-probability
+variance
 }
 \description{
-calculates the distribution
-}
-\examples{
-bin_distribution(trials = 5, prob = 0.5)
+calculates the variance
 }

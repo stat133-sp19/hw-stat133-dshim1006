@@ -244,14 +244,12 @@ print.summary.binvar <- function(v) {
 
 
 
-#1.5 bin_distribution
-#' @title bin distribution
-#' @description calculates the distribution
+# bin_mean
+#' @title bin mean
+#' @description calculates the mean
 #' @param n trials
 #' @param p prob
-#' @return probability
-#' @examples
-#' bin_distribution(trials = 5, prob = 0.5)
+#' @return mean
 #' @export
 bin_mean <- function(n, p) {
   if (check_trials(n) & check_prob(p)) {
@@ -262,14 +260,12 @@ bin_mean <- function(n, p) {
 
 
 
-#1.5 bin_distribution
-#' @title bin distribution
-#' @description calculates the distribution
+# bin_variance
+#' @title bin variance
+#' @description calculates the variance
 #' @param n trials
 #' @param p prob
-#' @return probability
-#' @examples
-#' bin_distribution(trials = 5, prob = 0.5)
+#' @return variance
 #' @export
 bin_variance <- function(n, p) {
   if (check_trials(n) & check_prob(p)) {
@@ -279,14 +275,12 @@ bin_variance <- function(n, p) {
 
 
 
-#1.5 bin_distribution
-#' @title bin distribution
-#' @description calculates the distribution
+# bin_mode
+#' @title bin mode
+#' @description calculates the mode
 #' @param n trials
 #' @param p prob
-#' @return probability
-#' @examples
-#' bin_distribution(trials = 5, prob = 0.5)
+#' @return mode
 #' @export
 bin_mode <- function(n, p) {
   if (check_trials(n) & check_prob(p)) {
@@ -296,14 +290,12 @@ bin_mode <- function(n, p) {
 
 
 
-#1.5 bin_distribution
-#' @title bin distribution
-#' @description calculates the distribution
+# bin_skewness
+#' @title bin skewness
+#' @description calculates the skewness
 #' @param n trials
 #' @param p prob
-#' @return probability
-#' @examples
-#' bin_distribution(trials = 5, prob = 0.5)
+#' @return skewness
 #' @export
 bin_skewness <- function(n, p) {
   if (check_trials(n) & check_prob(p)) {
@@ -313,14 +305,12 @@ bin_skewness <- function(n, p) {
 
 
 
-#1.5 bin_distribution
-#' @title bin distribution
-#' @description calculates the distribution
+# bin_kurtosis
+#' @title bin kurtosis
+#' @description calculates the kurtosis
 #' @param n trials
 #' @param p prob
-#' @return probability
-#' @examples
-#' bin_distribution(trials = 5, prob = 0.5)
+#' @return kurtosis
 #' @export
 bin_kurtosis <- function(n, p) {
   if (check_trials(n) & check_prob(p)) {
