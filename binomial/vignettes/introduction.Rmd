@@ -1,0 +1,123 @@
+---
+title: "Introduction to binomial"
+author: "Jennifer Shim"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to binomial}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, echo=FALSE, message=FALSE}
+knitr::opts_chunk$set(collapse = T, comment = "#>")
+library(binomial)
+```
+
+
+## Binomial
+
+The package `"binomial"` is an R package that implements functions for
+calculating probabilities of a Binomial random variable, and related calculations such as the
+probability distribution, the expected value, variance, etc.
+
+
+## Function bin_choose()
+
+This function calculates the number of combinations in which k successes can occur in n trials.
+
+```{r}
+bin_choose(5, 2)
+bin_choose(5, 0)
+bin_choose(5, 1:3)
+```
+
+## Function bin_probability()
+
+This function checks for valid trials, prob, and success and get probabilities of getting # of successes in # of trials. 
+
+```{r}
+bin_probability(2, 5,  0.5)
+bin_probability(0:2,  5, 0.5)
+bin_probability(55, 100, 0.45)
+```
+
+## Function bin_distribution()
+
+This function returns a data frame with the probability distribution: sucesses in
+the first column, probability in the second column.
+
+It also graphs a barplot to display the probability histogram of a binomial distribution object "bindis".
+
+```{r}
+x <- bin_distribution( 5, 0.5)
+x
+plot(x)
+```
+
+## Function bin_cumulative()
+
+This function returns a data frame with both the probability distribution and the
+cumulative probabilities: sucesses in the first column, probability in the second column,
+and cumulative in the third column.
+
+It also graphs the cumulative distribution in ab object "bincum".
+```{r}
+y <- bin_cumulative( 5,  0.5)
+y
+plot(y)
+```
+
+## Function bin_variable()
+
+This function returns an object of class "binvar", that is, a binomial random
+variable object.
+
+Summary function returns a list of class "summary.binvar" containing named elements
+
+```{r}
+bin1 <- bin_variable(10, 0.3)
+bin1
+summary(bin1)
+```
+
+## Function bin_mean()
+
+This function returns a mean 
+
+```{r}
+bin_mean(10, 0.3)
+```
+
+## Function bin_variance()
+
+This function returns a variance 
+
+```{r}
+bin_variance(10, 0.3)
+```
+
+## Function bin_mode()
+
+This funciton returns a mode
+
+```{r}
+bin_mode(10, 0.3)
+```
+
+## Function bin_skewness()
+
+This function returns a skewness
+
+```{r}
+bin_skewness(10, 0.3)
+```
+
+## Function bin_kurtosis()
+
+This function returns a kurtosis
+
+```{r}
+bin_kurtosis(10, 0.3)
+```
+
